@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: massai_mara:v2
+    container_name: massai_mara_app
+    ports:
+      - "8080:8080"
