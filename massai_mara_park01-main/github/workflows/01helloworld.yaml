@@ -1,0 +1,16 @@
+name: Hello, World!!
+
+on:
+  workflow_dispatch
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: print hello message
+        run: echo "Hello, GitHub Actions!!"
+
+      - name: print GHA run count
+        run: |
+          echo "count: ${{ github.run_number }}"  
+          
