@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+<div class="container">
+    <h4>Animal of the day</h4>
+    <img th:src="${url}" />
+    <p><small>Photo taken at <a href="https://www.maasaimara.com/">Massai Mara National Park</a></small></p>
+    <p>Delivered to you by container <span th:text="${hostname}"></span></p>
+</div>
+</body>
+</html>
